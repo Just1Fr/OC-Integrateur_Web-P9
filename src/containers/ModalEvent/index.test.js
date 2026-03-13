@@ -12,14 +12,14 @@ const data = {
   periode: "24-25-26 Février",
   prestations: [
     "1 espace d’exposition",
-    "1 scéne principale",
+    "1 scène principale",
     "2 espaces de restaurations",
     "1 site web dédié",
   ],
 };
 
 describe("When Modal data is created", () => {
-  it("a list of mandatories data is displayed", async () => {
+  it("a list of mandatory data is displayed", async () => {
     render(<ModalEvent event={data} />);
     await screen.findByText("1 espace d’exposition");
     await screen.findByText("24-25-26 Février");
